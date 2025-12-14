@@ -1,5 +1,5 @@
-// CNelson - Great Balls of Fire 2
-// Press L + P to skip levels for testing
+//CNelson - Great Balls of Fire 2
+//Press L + P to skip levels for testing
 //Boot Scene
 function BootScene() { Phaser.Scene.call(this, { key: "BootScene" }); }
 BootScene.prototype = Object.create(Phaser.Scene.prototype);
