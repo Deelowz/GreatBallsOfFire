@@ -255,22 +255,21 @@ function OpeningScene() { Phaser.Scene.call(this, { key: "OpeningScene" }); }
 OpeningScene.prototype = Object.create(Phaser.Scene.prototype);
 OpeningScene.prototype.constructor = OpeningScene;
 OpeningScene.prototype.create = function () {
-    this.add.text(120, 160,
+    this.add.text(150, 60,
         "Great Balls of Fire 2",
         { fontSize: "50px", color: "#00e1ffff", align: "center", fontStyle: "bold",
           fontFamily: "Tahoma" }
           
     );
-    this.add.text(120, 200,
+    this.add.text(150, 100,
         "\n-The Prequel-\nThe Unending Quest for Stuff",
         { fontSize: "35px", color: "#00e1ffff", align: "center", fontFamily: "Tahoma" }
     );
-    this.add.text(180, 200,
-        "\n\n\n\n\n\n\nCollect keys to open doors\n\n Collect 4 to open the last door\nDefeat the Final Boss\n\nClick or press '1' to shoot.\nPress SPACE to Start",
-        { fontSize: "22px", color: "#0d92ebff", align: "center", fontFamily: "Tahoma" }
+    this.add.text(120, 200,
+        "\n\nDefeat all enemies\n\nCollect keys to open doors\n\n WASD to Move\nLeft click to shoot at pointer\nRight Click to evade\n Collect All 4 to open the last door and defeat the Fire Boss\n\nPress SPACE to Start",
+        { fontSize: "20px", color: "#0d92ebff", align: "center", fontFamily: "Tahoma" }
     );
     this.input.keyboard.once("keydown-SPACE", () => this.scene.start("Room1", { hp: 100, keys: 0 }));
-    
 };
 
 //Base Rooms (Rooms 1-4)
